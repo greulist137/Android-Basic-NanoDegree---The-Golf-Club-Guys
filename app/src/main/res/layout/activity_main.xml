@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.happybirthday.MainActivity">
+
+    <ImageView
+        android:id = "@+id/gclubimage"
+        android:src="@drawable/gclub"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <TextView
+        android:id = "@+id/business_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Golf Club Guys"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/gclubimage"
+        android:paddingTop="35dp"/>
+
+    <TextView
+        android:id = "@+id/business_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Golf Club Guys is a one stop shop for all your golf club needs.  We sell / repair / buy all golf clubs.  Come on by to see our great selections / services!  "
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="35dp"
+        android:layout_below="@id/gclubimage"
+        android:layout_alignParentLeft="true"
+         />
+
+
+    <ImageView
+        android:id = "@+id/golf_image"
+        android:src="@drawable/golf"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/business_description"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="-35dp"
+   />
+
+
+    <TextView
+        android:id = "@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hours of Operation:"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="35dp"
+        android:layout_below="@id/golf_image"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sunday: 10AM-4PM
+Monday: 8AM-8PM
+Tuesday: 8AM-8PM
+Wednesday: 8AM-8PM
+Thursday: 8AM-8PM
+Friday: 8AM-8PM
+Saturday: 10AM-8PM"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/hours"
+        />
+
+</RelativeLayout>
